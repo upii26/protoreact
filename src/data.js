@@ -1,14 +1,16 @@
 import HeroImage from "/assets/welcome-banner.jpg";
+import cv from "/assets/cv/cv.pdf";
 
 const Image = {
-  HeroImage,
+  HeroImage,cv,
 };
+
 
 export default Image;
 
 import Tools1 from "/assets/tools/php.png";
 import Tools2 from "/assets/tools/reactjs.png";
-import Tools3 from "/assets/tools/nextjs.png";
+// import Tools3 from "/assets/tools/nextjs.png";
 import Tools4 from "/assets/tools/tailwind.png";
 import Tools5 from "/assets/tools/bootstrap.png";
 import Tools6 from "/assets/tools/js.png";
@@ -40,13 +42,13 @@ export const listTools = [
     ket: "Framework",
     dad: "200",
   },
-  {
-    id: 3,
-    gambar: Tools3,
-    nama: "Next JS",
-    ket: "Framework",
-    dad: "300",
-  },
+  // {
+  //   id: 3,
+  //   gambar: Tools3,
+  //   nama: "Next JS",
+  //   ket: "Framework",
+  //   dad: "300",
+  // },
   {
     id: 4,
     gambar: Tools4,
@@ -154,60 +156,76 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
-import Proyek3 from "/assets/proyek/proyek3.webp";
-import Proyek4 from "/assets/proyek/proyek4.webp";
-import Proyek5 from "/assets/proyek/proyek5.webp";
-import Proyek6 from "/assets/proyek/proyek6.webp";
+import p1 from "/assets/proyek/anq.png";
+import p2 from "/assets/proyek/astra.png";
+import p3 from "/assets/proyek/hannavilla.PNG";
+import p4 from "/assets/proyek/sikom.PNG";
+import p5 from "/assets/proyek/e-kpb.PNG";
+import p6 from "/assets/proyek/internal.PNG";
+import p7 from "/assets/proyek/vega.PNG";
 
 export const listProyek = [
   {
     id: 1,
-    gambar: Proyek1,
-    nama: "Website Sekolah",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    gambar: p1,
+    nama: "ANNA QUINN",
+    desk: "ANQ adalah website pemasaran villa yang dikembangkan menggunakan Laravel 10, dirancang untuk memudahkan promosi dan pemesanan properti secara online.",
+    tools: ["HTML", "CSS", "Javascript", "Laravel", "MYSQL"],
     dad: "200",
+    link: "https://annaandquinn.com/",
   },
   {
     id: 2,
-    gambar: Proyek2,
-    nama: "Company Profile",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Swiper", "Lightbox Gallery"],
+    gambar: p2,
+    nama: "ASTRA DAIHATSU",
+    desk: "ASTRA DAIHATSU adalah website katalog mobil interaktif yang memungkinkan pengguna untuk melihat detail produk dan spesifikasi kendaraan dari Daihatsu secara online",
+    tools: ["HTML", "CSS", "Javascript"],
     dad: "300",
+    link: "https://daihatsutangerangkota.com/",
   },
   {
     id: 3,
-    gambar: Proyek3,
-    nama: "Web Pernikahan 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    gambar: p3,
+    nama: "HANNA VILLA",
+    desk: "HANNA VILLA adalah website pemesanan villa yang dilengkapi dengan sistem manajemen hotel untuk mempermudah proses booking dan pengelolaan reservasi.",
     tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
     dad: "400",
+    link:"https://hannavilla.com/",
   },
   {
     id: 4,
-    gambar: Proyek4,
-    nama: "Website Course",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    gambar: p4,
+    nama: "SIKOM PRESISI",
+    desk: "SIKOM PRESISI adalah website profil kepolisian yang menyajikan informasi terkait Sumber Daya Manusia (SDM) dan Pengadaan Barang dan Jasa (PBJ).",
     tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
     dad: "500",
+    link:"https://sikompresisi.vercel.app/",
   },
   {
     id: 5,
-    gambar: Proyek5,
-    nama: "Web Portfolio",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    gambar: p5,
+    nama: "E-KPB",
+    desk: "E-KPB adalah website profil resmi Pemerintah Kota Bandar Lampung yang berfungsi sebagai media informasi kegiatan, program kerja, dan perkembangan pembangunan daerah.",
     tools: ["HTML", "CSS", "Javascript", "Bootsrap"],
     dad: "600",
+    link: "https://portoe-kb.vercel.app/",
   },
   {
     id: 6,
-    gambar: Proyek6,
-    nama: "Company Profile 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    gambar: p6,
+    nama: "INTERNAL VEGA",
+    desk: "INTERNAL VEGA adalah sistem internal perusahaan yang terintegrasi dengan proses transfer dana serta pengelolaan data seperti laporan gaji, kehadiran karyawan, dan informasi nilai tukar (kurs).",
     tools: ["NextJS", "TailwindCSS", "Framermotion"],
     dad: "700",
+    linnk: "https://internal.vega.co.id/",
+  },
+    {
+    id: 6,
+    gambar: p7,
+    nama: "VEGA",
+    desk: "VEGA adalah website company profile yang dilengkapi fitur pengecekan harga kurs mata uang secara real-time melalui integrasi API. ",
+    tools: ["Boostrap", "HTML", "Javascript"],
+    dad: "700",
+    link: "https://vegakurs.vega.co.id/",
   },
 ];

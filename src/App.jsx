@@ -25,10 +25,11 @@ function App() {
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
             <a
-              href="#"
+              href={DataImage.cv}
+             download="CV_Luthfi.pdf"
               className="bg-yellow-500 p-4 rounded-2xl hover:bg-yellow-400"
             >
-              Cover Latter <i className="ri-download-line ri-lg"></i>
+              Download CV <i className="ri-download-line ri-lg"></i>
             </a>
             <a
               href="#"
@@ -129,7 +130,7 @@ function App() {
                 </div>
                 <div className="mt-8 text-center">
                   <a
-                    href="#"
+                    href={proyek.link}
                     className="bg-yellow-500 p-3 rounded-lg block border border-amber-300 hover:bg-amber-500"
                   >
                     See Website
