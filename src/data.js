@@ -163,6 +163,7 @@ import p4 from "/assets/proyek/sikom.PNG";
 import p5 from "/assets/proyek/e-kpb.PNG";
 import p6 from "/assets/proyek/internal.PNG";
 import p7 from "/assets/proyek/vega.PNG";
+import p8 from "/assets/proyek/disney.png";
 
 export const listProyek = [
   {
@@ -220,12 +221,21 @@ export const listProyek = [
     linnk: "https://internal.vega.co.id/",
   },
     {
-    id: 6,
+    id: 7,
     gambar: p7,
     nama: "VEGA",
     desk: "VEGA adalah website company profile yang dilengkapi fitur pengecekan harga kurs mata uang secara real-time melalui integrasi API. ",
     tools: ["Bootstrap", "HTML", "Javascript"],
     dad: "700",
     link: "https://vegakurs.vega.co.id/",
+  },
+    {
+    id: 8,
+    gambar: p8,
+    nama: "Disney+",
+    desk: "Di proyek ini, saya membuat clone tampilan aplikasi Disney+ menggunakan React, Tailwind CSS, dan mengambil data film dari API TMDB",
+    tools: ["Tailwindcss", "HTML", "React", "TMDB"],
+    dad: "700",
+    link: "https://porto-disney-xs6o.vercel.app/",
   },
 ];
