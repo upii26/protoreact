@@ -1,5 +1,5 @@
 import DataImage from "./data";
-import { listTools, listProyek } from "./data";
+import { listTools, listProyek, listgallery } from "./data";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           <div className="flex items-center sm:gap-4 gap-2">
             <a
               href={DataImage.cv}
-             download="CV_Luthfi.pdf"
+              download="CV_Luthfi.pdf"
               className="bg-yellow-500 p-4 rounded-2xl hover:bg-yellow-400"
             >
               Download CV <i className="ri-download-line ri-lg"></i>
@@ -48,7 +48,11 @@ function App() {
       </div>
 
       <div className="tentang mt-32 py-10" id="about">
-        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+        <div
+          className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           {/* <img
             src={DataImage.HeroImage}
             alt="Image"
@@ -85,12 +89,21 @@ function App() {
           </div>
         </div>
         <div className="tools mt-32">
-          <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-right" data-aos-duration="1000">Language & Tools</h1>
+          <h1
+            className="text-4xl/snug font-bold mb-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            Language & Tools
+          </h1>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
             {listTools.map((tools) => (
               <div
                 className="group flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800"
-                key={tools.id} data-aos="flip-down" data-aos-duration="1000" data-aos-delay={tools.dad}
+                key={tools.id}
+                data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay={tools.dad}
               >
                 <img
                   src={tools.gambar}
@@ -108,12 +121,44 @@ function App() {
         </div>
       </div>
 
+      <div className="mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+  {listgallery.map((desain, index) => (
+    <div
+      key={index}
+      className=" p-2 rounded-lg shadow-lg flex items-center justify-center"
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      data-aos-delay={desain.delay}
+    >
+      <img
+        src={desain.gambar}
+        alt={`Design ${index + 1}`}
+        className="max-w-full max-h-[500px] object-contain"
+        loading="lazy"
+      />
+    </div>
+  ))}
+</div>
+
+
       <div className="proyek mt-32 py-10" id="project">
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-right" data-aos-duration="1000">Project</h1>
+        <h1
+          className="text-center text-4xl font-bold mb-2"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Project
+        </h1>
 
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listProyek.map((proyek) => (
-            <div key={proyek.id} className="p-4 bg-zinc-700 rounded-md" data-aos="flip-down" data-aos-duration="1000" data-aos-delay={proyek.dad}>
+            <div
+              key={proyek.id}
+              className="p-4 bg-zinc-700 rounded-md"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+              data-aos-delay={proyek.dad}
+            >
               <img src={proyek.gambar} alt="proyek image" loading="lazy" />
               <div>
                 <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
@@ -143,12 +188,21 @@ function App() {
       </div>
 
       <div className="kontak mt-32 sm:p-10 p-0" id="contact">
-        <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-down" data-aos-duration="1000">Contact Us</h1>
+        <h1
+          className="text-4xl mb-2 font-bold text-center"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          Contact Us
+        </h1>
         <form
           action="https://formsubmit.co/balefighet@gmail.com"
           method="POST"
           className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md"
-          autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"
+          autoComplete="off"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
         >
           <div className=" flex flex-col gap-6">
             <div className="flex flex-col gap-2">

@@ -164,6 +164,7 @@ import p5 from "/assets/proyek/e-kpb.PNG";
 import p6 from "/assets/proyek/internal.PNG";
 import p7 from "/assets/proyek/vega.PNG";
 import p8 from "/assets/proyek/disney.png";
+import p9 from "/assets/proyek/food-del.png";
 
 export const listProyek = [
   {
@@ -237,5 +238,45 @@ export const listProyek = [
     tools: ["Tailwindcss", "HTML", "React", "TMDB"],
     dad: "700",
     link: "https://porto-disney-xs6o.vercel.app/",
+  },
+  {
+    id: 9,
+    gambar: p9,
+    nama: "Food Del",
+    desk: "Di proyek ini, saya membuat Tampilan untuk pemesanan makanan yang saya lihat dari tutorial di youtube",
+    tools: ["Css", "HTML", "React"],
+    dad: "700",
+    link: "https://food-del-nine-coral.vercel.app/",
+  },
+];
+
+export const listgallery = [
+  {
+    gambar: "/assets/design/banner-vertical.png",
+    delay: 100,
+  },
+  {
+    gambar: "/assets/design/banner.png",
+    delay: 100,
+  },
+  {
+    gambar: "/assets/design/iklan bir.png",
+    delay: 100,
+  },
+  {
+    gambar: "/assets/design/logo revisi imagin.png",
+    delay: 100,
+  },
+  {
+    gambar: "/assets/design/logo-dog.png",
+    delay: 100,
+  },
+  {
+    gambar: "/assets/design/poster-malam-puncak2.png",
+    delay: 100,
+  },
+  {
+    gambar: "/assets/design/reebandbeer16.png",
+    delay: 100,
   },
 ];
