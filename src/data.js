@@ -26,6 +26,7 @@ import Tools15 from "/assets/tools/canva.png";
 import Tools16 from "/assets/tools/figma.png";
 import Tools17 from "/assets/tools/ae.png";
 import Tools18 from "/assets/tools/davinci.png";
+import Tools19 from "/assets/tools/Go-Logo_Blue.png";
 
 export const listTools = [
   {
@@ -42,13 +43,14 @@ export const listTools = [
     ket: "Framework",
     dad: "200",
   },
-  // {
-  //   id: 3,
-  //   gambar: Tools3,
-  //   nama: "Next JS",
-  //   ket: "Framework",
-  //   dad: "300",
-  // },
+    {
+    id: 13,
+    gambar: Tools19,
+    nama: "Go",
+    ket: "Language",
+    dad: "1100",
+  },
+  
   {
     id: 4,
     gambar: Tools4,
