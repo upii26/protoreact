@@ -27,6 +27,8 @@ import Tools16 from "/assets/tools/figma.png";
 import Tools17 from "/assets/tools/ae.png";
 import Tools18 from "/assets/tools/davinci.png";
 import Tools19 from "/assets/tools/Go-Logo_Blue.png";
+import Tools20 from "/assets/tools/BI.svg";
+import Tools21 from "/assets/tools/sql-server.svg";
 
 export const listTools = [
   {
@@ -154,6 +156,20 @@ export const listTools = [
     gambar: Tools18,
     nama: "DaVinci",
     ket: "Video Editor",
+    dad: "1100",
+  },
+  {
+    id: 20,
+    gambar: Tools20,
+    nama: "Power BI",
+    ket: "Visual Data",
+    dad: "1100",
+  },
+  {
+    id: 21,
+    gambar: Tools21,
+    nama: "SQL Server",
+    ket: "Management Data",
     dad: "1100",
   },
 ];
