@@ -2,9 +2,9 @@ import HeroImage from "/assets/welcome-banner.jpg";
 import cv from "/assets/cv/cv.pdf";
 
 const Image = {
-  HeroImage,cv,
+  HeroImage,
+  cv,
 };
-
 
 export default Image;
 
@@ -43,14 +43,14 @@ export const listTools = [
     ket: "Framework",
     dad: "200",
   },
-    {
+  {
     id: 13,
     gambar: Tools19,
     nama: "Go",
     ket: "Language",
     dad: "1100",
   },
-  
+
   {
     id: 4,
     gambar: Tools4,
@@ -86,28 +86,28 @@ export const listTools = [
     ket: "Framework",
     dad: "700",
   },
-   {
+  {
     id: 9,
     gambar: Tools9,
     nama: "Java",
     ket: "Language",
     dad: "700",
   },
-   {
+  {
     id: 10,
     gambar: Tools10,
     nama: "Python",
     ket: "Language",
     dad: "700",
   },
-   {
+  {
     id: 11,
     gambar: Tools11,
     nama: "R",
     ket: "Language",
     dad: "700",
   },
-   {
+  {
     id: 12,
     gambar: Tools12,
     nama: "Mysql",
@@ -194,7 +194,7 @@ export const listProyek = [
     desk: "HANNA VILLA adalah website pemesanan villa yang dilengkapi dengan sistem manajemen hotel untuk mempermudah proses booking dan pengelolaan reservasi.",
     tools: ["HTML", "Bootstrap", "PHP", "MYSQL", "AOS"],
     dad: "400",
-    link:"https://hannavilla.com/",
+    link: "https://hannavilla.com/",
   },
   {
     id: 4,
@@ -203,7 +203,7 @@ export const listProyek = [
     desk: "SIKOM PRESISI adalah website profil kepolisian yang menyajikan informasi terkait Sumber Daya Manusia (SDM) dan Pengadaan Barang dan Jasa (PBJ).",
     tools: ["HTML", "Bootstrap", "AOS"],
     dad: "500",
-    link:"https://sikompresisi.vercel.app/",
+    link: "https://sikompresisi.vercel.app/",
   },
   {
     id: 5,
@@ -223,7 +223,7 @@ export const listProyek = [
     dad: "700",
     linnk: "https://internal.vega.co.id/",
   },
-    {
+  {
     id: 7,
     gambar: p7,
     nama: "VEGA",
@@ -232,7 +232,7 @@ export const listProyek = [
     dad: "700",
     link: "https://vegakurs.vega.co.id/",
   },
-    {
+  {
     id: 8,
     gambar: p8,
     nama: "Disney+",
@@ -249,6 +249,19 @@ export const listProyek = [
     tools: ["Css", "HTML", "React"],
     dad: "700",
     link: "https://food-del-nine-coral.vercel.app/",
+  },
+];
+
+import analyst1 from "/assets/proyek/analyst1.png";
+export const listanalyst = [
+  {
+    id: 1,
+    gambar: analyst1,
+    nama: "DASHBOARD PENJUALAN ELEKTRONIK",
+    desk: "Proyek ini merupakan sebuah dashboard yang digunakan oleh analis untuk memantau dan menganalisis laporan penjualan barang elektronik. Sumber data yang digunakan dalam proyek ini diambil dari Kaggle.",
+    tools: ["EXCEL", "SQL SERVER", "POWER BI"],
+    dad: "200",
+    link: "https://app.powerbi.com/groups/me/reports/dc1324fe-5b03-4420-94c9-ba5ea52a01ad?pbi_source=desktop/",
   },
 ];
 

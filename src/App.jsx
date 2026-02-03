@@ -1,5 +1,5 @@
 import DataImage from "./data";
-import { listTools, listProyek, listgallery } from "./data";
+import { listTools, listProyek, listgallery,listanalyst } from "./data";
 
 function App() {
   return (
@@ -122,24 +122,23 @@ function App() {
       </div>
 
       <div className="mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
-  {listgallery.map((desain, index) => (
-    <div
-      key={index}
-      className=" p-2 rounded-lg shadow-lg flex items-center justify-center"
-      data-aos="zoom-in-up"
-      data-aos-duration="1000"
-      data-aos-delay={desain.delay}
-    >
-      <img
-        src={desain.gambar}
-        alt={`Design ${index + 1}`}
-        className="max-w-full max-h-[500px] object-contain"
-        loading="lazy"
-      />
-    </div>
-  ))}
-</div>
-
+        {listgallery.map((desain, index) => (
+          <div
+            key={index}
+            className=" p-2 rounded-lg shadow-lg flex items-center justify-center"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay={desain.delay}
+          >
+            <img
+              src={desain.gambar}
+              alt={`Design ${index + 1}`}
+              className="max-w-full max-h-[500px] object-contain"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
 
       <div className="proyek mt-32 py-10" id="project">
         <h1
@@ -147,11 +146,57 @@ function App() {
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          Project
+          Web Development
         </h1>
 
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listProyek.map((proyek) => (
+            <div
+              key={proyek.id}
+              className="p-4 bg-zinc-700 rounded-md"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+              data-aos-delay={proyek.dad}
+            >
+              <img src={proyek.gambar} alt="proyek image" loading="lazy" />
+              <div>
+                <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
+                <p className="text-base/loose mb-4">{proyek.desk}</p>
+                <div className="flex flex-wrap gap-2">
+                  {proyek.tools.map((tools, index) => (
+                    <p
+                      className="py-1 px-3 border border-yellow-400 rounded-md bg-yellow-400 font-semibold"
+                      key={index}
+                    >
+                      {tools}
+                    </p>
+                  ))}
+                </div>
+                <div className="mt-8 text-center">
+                  <a
+                    href={proyek.link}
+                    className="bg-yellow-500 p-3 rounded-lg block border border-amber-300 hover:bg-amber-500"
+                  >
+                    See Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="proyek mt-32 py-10" id="project">
+        <h1
+          className="text-center text-4xl font-bold mb-2"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Data Analyst
+        </h1>
+
+        <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+          {listanalyst.map((proyek) => (
             <div
               key={proyek.id}
               className="p-4 bg-zinc-700 rounded-md"
