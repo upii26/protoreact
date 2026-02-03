@@ -7,10 +7,10 @@ function App() {
       <div className="hero grid md:grid-cols-2 pt-10 items-center xl:gap-0 gap-6 grid-cols-1">
         <div className="animate__animated animate__fadeInDownBig animate__delay-20s">
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
-            <q>Semua Dalam Hitungan 🔥🔥</q>
+            <q>Dalam Hitungan 🔥🔥</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">
-            Hello, My Name Is luthfi.
+            Hello, Nama Saya luthfi.
           </h1>
           <p className="text-base/loose text-justify mb-6 opacity-50">
             Saya adalah seorang programmer di bidang Informatika dengan minat
