@@ -39,12 +39,12 @@ function App() {
             </a>
           </div>
         </div>
-        <img
+        {/* <img
           src={DataImage.HeroImage}
           alt="Hero Image"
           className="w-[600px] rounded-4xl md:ml-auto animate__animated animate__fadeInRight animate__delay-20s"
           loading="lazy"
-        />
+        /> */}
       </div>
 
       <div className="tentang mt-32 py-10" id="about">
@@ -58,7 +58,7 @@ function App() {
             alt="Image"
             className="w-12 rounded-md mb-10 sm:hidden"
           /> */}
-          <p className="text-base/loose mb-10 text-justify">
+          {/* <p className="text-base/loose mb-10 text-justify">
             Saya merupakan alumni program studi Informatika dari Universitas
             Sanata Dharma. Saat ini, saya sedang melanjutkan pendidikan di
             Universitas Islam Indonesia dengan tujuan untuk lebih mendalami
@@ -69,7 +69,7 @@ function App() {
             berkomunikasi secara efektif. Selain itu, saya juga dapat bekerja
             secara profesional, dengan kemampuan untuk membedakan antara urusan
             pekerjaan dan hal-hal di luar pekerjaan.
-          </p>
+          </p> */}
           <div className="flex items-center justify-between">
             <p className="w-12 rounded-md sm:block hidden"></p>
             <div className="flex items-center gap-6">
