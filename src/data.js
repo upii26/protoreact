@@ -311,3 +311,25 @@ export const listgallery = [
     delay: 100,
   },
 ];
+
+
+import s1 from "/assets/sertifikat/pentest.png";
+import s2 from "/assets/sertifikat/blueteam.jpg";
+import s3 from "/assets/sertifikat/pentes.jpg";
+export const listSertifikasi = [
+  {
+    id: 1,
+    gambar: s1,
+    dad: "100",
+  },
+  {
+    id: 2,
+    gambar: s2,
+    dad: "100",
+  },
+  {
+    id: 3,
+    gambar: s3,
+    dad: "100",
+  },
+];

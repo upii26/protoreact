@@ -1,5 +1,5 @@
 import DataImage from "./data";
-import { listTools, listProyek, listgallery,listanalyst } from "./data";
+import { listTools, listProyek, listgallery,listanalyst,listSertifikasi  } from "./data";
 
 function App() {
   return (
@@ -121,7 +121,7 @@ function App() {
         </div>
       </div>
 
-      <div className="mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+      {/* <div className="mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
         {listgallery.map((desain, index) => (
           <div
             key={index}
@@ -138,7 +138,7 @@ function App() {
             />
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className="proyek mt-32 py-10" id="project">
         <h1
@@ -186,7 +186,7 @@ function App() {
         </div>
       </div>
 
-      <div className="proyek mt-32 py-10" id="project">
+      {/* <div className="proyek mt-32 py-10" id="project">
         <h1
           className="text-center text-4xl font-bold mb-2"
           data-aos="fade-right"
@@ -230,7 +230,36 @@ function App() {
             </div>
           ))}
         </div>
+      </div> */}
+
+      <div className="proyek mt-32 py-10" id="certifications">
+  <h1
+    className="text-center text-4xl font-bold mb-2"
+    data-aos="fade-right"
+    data-aos-duration="1000"
+  >
+    Sertifikasi
+  </h1>
+
+  <div className="mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+    {listSertifikasi.map((sert) => (
+      <div
+        key={sert.id}
+        className="p-2 bg-zinc-700 rounded-md overflow-hidden hover:scale-105 transition-transform duration-300"
+        data-aos="flip-down"
+        data-aos-duration="1000"
+        data-aos-delay={sert.dad}
+      >
+        <img
+          src={sert.gambar}
+          alt={`Sertifikasi ${sert.id}`}
+          className="w-full h-full object-contain rounded-md"
+          loading="lazy"
+        />
       </div>
+    ))}
+  </div>
+</div>
 
       <div className="kontak mt-32 sm:p-10 p-0" id="contact">
         <h1
