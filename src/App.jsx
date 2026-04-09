@@ -1,5 +1,5 @@
 import DataImage from "./data";
-import { listTools, listProyek, listgallery,listanalyst,listSertifikasi  } from "./data";
+import { listTools, listProyek,listSertifikasi  } from "./data";
 
 function App() {
   return (
