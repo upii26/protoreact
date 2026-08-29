@@ -4,8 +4,8 @@ import { listTools, listProyek,listSertifikasi  } from "./data";
 function App() {
   return (
     <>
-      <div className="hero grid md:grid-cols-2 pt-10 items-center xl:gap-0 gap-6 grid-cols-1">
-        <div className="animate__animated animate__fadeInDownBig animate__delay-20s">
+      {/* <div className="hero grid md:grid-cols-2 pt-10 items-center xl:gap-0 gap-6 grid-cols-1"> */}
+        {/* <div className="animate__animated animate__fadeInDownBig animate__delay-20s">
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
             <q>Dalam Hitungan 🔥🔥</q>
           </div>
@@ -38,26 +38,22 @@ function App() {
               Lihat Proyek <i className="ri-arrow-down-line ri-lg"></i>
             </a>
           </div>
-        </div>
-        <img
+        </div> */}
+        {/* <img
           src={DataImage.HeroImage}
           alt="Hero Image"
           className="w-[600px] rounded-4xl md:ml-auto animate__animated animate__fadeInRight animate__delay-20s"
           loading="lazy"
-        />
-      </div>
+        /> */}
+      {/* </div> */}
 
       <div className="tentang mt-32 py-10" id="about">
-        <div
+        {/* <div
           className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          {/* <img
-            src={DataImage.HeroImage}
-            alt="Image"
-            className="w-12 rounded-md mb-10 sm:hidden"
-          /> */}
+    
           <p className="text-base/loose mb-10 text-justify">
             Saya merupakan alumni program studi Informatika dari Universitas
             Sanata Dharma. Saat ini, saya sedang melanjutkan pendidikan di
@@ -87,7 +83,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="tools mt-32">
           <h1
             className="text-4xl/snug font-bold mb-4"
@@ -232,7 +228,7 @@ function App() {
         </div>
       </div> */}
 
-      <div className="proyek mt-32 py-10" id="certifications">
+      {/* <div className="proyek mt-32 py-10" id="certifications">
   <h1
     className="text-center text-4xl font-bold mb-2"
     data-aos="fade-right"
@@ -259,7 +255,7 @@ function App() {
       </div>
     ))}
   </div>
-</div>
+</div> */}
 
       <div className="kontak mt-32 sm:p-10 p-0" id="contact">
         <h1
